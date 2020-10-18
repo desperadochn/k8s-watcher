@@ -181,7 +181,7 @@ func DeployOnUpdate(oldObj interface{},newObj interface{}) {
 				fmt.Printf("json.Marshal failed, err:%v\n", err)
 				return
 			}
-			DumpToEtcd("10.10.6.2:2379", keyName, string(value))
+			DumpToEtcd("xxxxxxxxxx", keyName, string(value))
 		}
 	}
 }
